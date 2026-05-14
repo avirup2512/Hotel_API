@@ -1,0 +1,73 @@
+version: "3.9"
+
+services:
+
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
+
+  postgres:
+    image: postgres:15
+    container_name: temporal-postgres
+    environment:
+      POSTGRES_USER: temporal
+      POSTGRES_PASSWORD: temporal
+      POSTGRES_DB: temporal
+
+  temporal:
+    image: temporalio/auto-setup:1.27.2
+    container_name: temporal
+    depends_on:
+      - postgres
+    environment:
+      DB: postgres12
+      DB_PORT: 5432
+      POSTGRES_USER: temporal
+      POSTGRES_PWD: temporal
+      POSTGRES_SEEDS: postgres
+    ports:
+      - "7233:7233"
+
+  temporal-ui:
+    image: temporalio/ui:2.39.0
+    container_name: temporal-ui
+    depends_on:
+      - temporal
+    environment:
+      TEMPORAL_ADDRESS: temporal:7233
+    ports:
+      - "8080:8080"
+
+  api:
+    build: .
+    container_name: tripare-api
+    depends_on:
+      - redis
+      - temporal
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run dev
+    environment:
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      TEMPORAL_ADDRESS: temporal:7233
+
+  worker:
+    build: .
+    container_name: tripare-worker
+    depends_on:
+      - temporal
+      - redis
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run worker
+    environment:
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      TEMPORAL_ADDRESS: temporal:7233

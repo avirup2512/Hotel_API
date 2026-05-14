@@ -1,0 +1,149 @@
+[
+  {
+    "hotelId": "a1",
+    "name": "Holtin",
+    "price": 6000,
+    "city": "delhi",
+    "commissionPct": 10
+  },
+  {
+    "hotelId": "a2",
+    "name": "Royal Stay",
+    "price": 4500,
+    "city": "kolkata",
+    "commissionPct": 12
+  },
+  {
+    "hotelId": "a3",
+    "name": "Sea Breeze",
+    "price": 7200,
+    "city": "mumbai",
+    "commissionPct": 15
+  },
+  {
+    "hotelId": "a4",
+    "name": "Green Leaf",
+    "price": 3900,
+    "city": "pune",
+    "commissionPct": 8
+  },
+  {
+    "hotelId": "a5",
+    "name": "Palm Resort",
+    "price": 8500,
+    "city": "kerala",
+    "commissionPct": 18
+  },
+  {
+    "hotelId": "a6",
+    "name": "City Palace",
+    "price": 5100,
+    "city": "delhi",
+    "commissionPct": 11
+  },
+  {
+    "hotelId": "a7",
+    "name": "Urban Nest",
+    "price": 4300,
+    "city": "kolkata",
+    "commissionPct": 9
+  },
+  {
+    "hotelId": "a8",
+    "name": "Sky Heights",
+    "price": 7800,
+    "city": "mumbai",
+    "commissionPct": 14
+  },
+  {
+    "hotelId": "a9",
+    "name": "Comfort Inn",
+    "price": 3500,
+    "city": "pune",
+    "commissionPct": 7
+  },
+  {
+    "hotelId": "a10",
+    "name": "Lake View",
+    "price": 9100,
+    "city": "kerala",
+    "commissionPct": 20
+  },
+  {
+    "hotelId": "a11",
+    "name": "Grand Horizon",
+    "price": 6400,
+    "city": "delhi",
+    "commissionPct": 13
+  },
+  {
+    "hotelId": "a12",
+    "name": "Sunrise Hotel",
+    "price": 4700,
+    "city": "kolkata",
+    "commissionPct": 10
+  },
+  {
+    "hotelId": "a13",
+    "name": "Elite Residency",
+    "price": 8000,
+    "city": "mumbai",
+    "commissionPct": 16
+  },
+  {
+    "hotelId": "a14",
+    "name": "Hilltop Suites",
+    "price": 4100,
+    "city": "pune",
+    "commissionPct": 9
+  },
+  {
+    "hotelId": "a15",
+    "name": "Backwater Retreat",
+    "price": 9700,
+    "city": "kerala",
+    "commissionPct": 22
+  },
+  {
+    "hotelId": "a16",
+    "name": "Metro Lodge",
+    "price": 5300,
+    "city": "delhi",
+    "commissionPct": 12
+  },
+  {
+    "hotelId": "a17",
+    "name": "Heritage Stay",
+    "price": 4900,
+    "city": "kolkata",
+    "commissionPct": 11
+  },
+  {
+    "hotelId": "a18",
+    "name": "Ocean Pearl",
+    "price": 7600,
+    "city": "mumbai",
+    "commissionPct": 17
+  },
+  {
+    "hotelId": "a19",
+    "name": "Silver Oak",
+    "price": 3700,
+    "city": "pune",
+    "commissionPct": 8
+  },
+  {
+    "hotelId": "a20",
+    "name": "Coconut Grove",
+    "price": 9900,
+    "city": "kerala",
+    "commissionPct": 25
+  },
+    {
+    "hotelId": "a21",
+    "name": "City Palace",
+    "price": 8400,
+    "city": "delhi",
+    "commissionPct": 13
+  }
+]

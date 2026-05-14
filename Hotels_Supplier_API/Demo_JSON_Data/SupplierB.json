@@ -1,0 +1,149 @@
+[
+  {
+    "hotelId": "a21",
+    "name": "Golden Tulip",
+    "price": 6200,
+    "city": "delhi",
+    "commissionPct": 14
+  },
+  {
+    "hotelId": "a22",
+    "name": "Moonlight Suites",
+    "price": 5400,
+    "city": "kolkata",
+    "commissionPct": 11
+  },
+  {
+    "hotelId": "a23",
+    "name": "Harbor View",
+    "price": 8800,
+    "city": "mumbai",
+    "commissionPct": 19
+  },
+  {
+    "hotelId": "a24",
+    "name": "Maple Residency",
+    "price": 4700,
+    "city": "pune",
+    "commissionPct": 9
+  },
+  {
+    "hotelId": "a25",
+    "name": "Kerala Paradise",
+    "price": 10200,
+    "city": "kerala",
+    "commissionPct": 24
+  },
+  {
+    "hotelId": "a26",
+    "name": "Imperial Crown",
+    "price": 6900,
+    "city": "delhi",
+    "commissionPct": 15
+  },
+  {
+    "hotelId": "a27",
+    "name": "Riverfront Inn",
+    "price": 5200,
+    "city": "kolkata",
+    "commissionPct": 10
+  },
+  {
+    "hotelId": "a28",
+    "name": "Blue Lagoon",
+    "price": 9300,
+    "city": "mumbai",
+    "commissionPct": 21
+  },
+  {
+    "hotelId": "a29",
+    "name": "Pinewood Hotel",
+    "price": 4100,
+    "city": "pune",
+    "commissionPct": 8
+  },
+  {
+    "hotelId": "a30",
+    "name": "Spice Garden Resort",
+    "price": 11500,
+    "city": "kerala",
+    "commissionPct": 26
+  },
+  {
+    "hotelId": "a31",
+    "name": "Capital Heights",
+    "price": 7500,
+    "city": "delhi",
+    "commissionPct": 17
+  },
+  {
+    "hotelId": "a32",
+    "name": "Heritage Palace",
+    "price": 5600,
+    "city": "kolkata",
+    "commissionPct": 12
+  },
+  {
+    "hotelId": "a33",
+    "name": "Marine Plaza",
+    "price": 9800,
+    "city": "mumbai",
+    "commissionPct": 20
+  },
+  {
+    "hotelId": "a34",
+    "name": "Silver Fern",
+    "price": 4600,
+    "city": "pune",
+    "commissionPct": 9
+  },
+  {
+    "hotelId": "a35",
+    "name": "Backwater Bliss",
+    "price": 12100,
+    "city": "kerala",
+    "commissionPct": 28
+  },
+  {
+    "hotelId": "a36",
+    "name": "Urban Retreat",
+    "price": 6700,
+    "city": "delhi",
+    "commissionPct": 13
+  },
+  {
+    "hotelId": "a37",
+    "name": "City Comfort",
+    "price": 5000,
+    "city": "kolkata",
+    "commissionPct": 10
+  },
+  {
+    "hotelId": "a38",
+    "name": "Ocean Breeze",
+    "price": 8900,
+    "city": "mumbai",
+    "commissionPct": 18
+  },
+  {
+    "hotelId": "a39",
+    "name": "Royal Orchid",
+    "price": 4300,
+    "city": "pune",
+    "commissionPct": 7
+  },
+  {
+    "hotelId": "a40",
+    "name": "Coconut Bay",
+    "price": 10800,
+    "city": "kerala",
+    "commissionPct": 25
+  },
+  {
+    "hotelId": "a41",
+    "name": "Sky Heights",
+    "price": 7400,
+    "city": "mumbai",
+    "commissionPct": 14
+  }
+]
