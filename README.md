@@ -18,3 +18,8 @@ Both Folders has their own `Controller`,`Service`,`Model`, `Route` etc. folder.
 5) Run docker compose up --build
 6) In this repository `Hotels_API.postman_collection` file is there. Import that file to postman.
 7) Then in postman test the APIs.
+
+<b><u> In this project no any DB is being used, API response is being fetched from file read.</u></b>
+The file paths are
+1) https://github.com/avirup2512/Hotel_API/blob/main/Hotels_Supplier_API/Demo_JSON_Data/SupplierA.json
+2) https://github.com/avirup2512/Hotel_API/blob/main/Hotels_Supplier_API/Demo_JSON_Data/SupplierB.json
