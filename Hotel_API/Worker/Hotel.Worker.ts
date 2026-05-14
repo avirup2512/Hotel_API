@@ -3,11 +3,35 @@ import {fileURLToPath} from "url"
 import {HotelModel } from "../Model/Hotel.Model.js";
 const hotelModel =
   new HotelModel();
-
+async function createConnection() {
+  while (true) {
+    try {
+      console.log(
+        "Trying Temporal:",
+        process.env.TEMPORAL_ADDRESS
+      );
+      const connection =
+        await NativeConnection.connect({
+          address:
+            process.env.TEMPORAL_ADDRESS ||
+            "temporal:7233",
+        });
+      console.log(
+        "Successfully Connected to Temporal"
+      );
+      return connection;
+    } catch (err) {
+      console.log(
+        "Temporal not ready, retrying..."
+      );
+      await new Promise((res) =>
+        setTimeout(res, 5000)
+      );
+    }
+  }
+}
 async function run() { 
-  const connection = await NativeConnection.connect({
-    address:"temporal:7233",
-  });
+  const connection = await createConnection();
   const worker = await Worker.create({
     connection,
     workflowsPath: fileURLToPath(
@@ -28,10 +52,7 @@ async function run() {
       )
     },
     taskQueue: "hotel-task-queue"
-  });
-  console.log("GYANAM DHYANAM SANTAM HARI");
-  
+  });  
   await worker.run();
 }
-
 run().catch(console.error);
