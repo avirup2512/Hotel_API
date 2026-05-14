@@ -8,14 +8,13 @@ export class RedisClient {
         this.redisClient = createClient(
         {
             socket: {
-            host: process.env.REDIS_HOST_URL,
-            port: process.env.REDIS_PORT,
+            host: process.env.REDIS_HOST_URL|| "redis",
+            port: Number(process.env.REDIS_PORT) || 6379,
             reconnectStrategy: (retries) => {
             console.log(`Retry attempt: ${retries}`);
                 return Math.min(retries * 50, 500);
             }
             }, 
-            password:process.env.REDIS_PASSWORD
         }
         );
         this.redisClient.on('error', (err:any) => console.log('Redis Client Error', err));
